@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F35E4A6246CFDBC00B251C7 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35E4A5246CFDBC00B251C7 /* ImageUtils.swift */; };
+		2F3B9930245597D30007F0FB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B992F245597D30007F0FB /* tessdata */; };
+		2F3B99E62455A02F0007F0FB /* SmartDocCropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B02455A02E0007F0FB /* SmartDocCropVC.swift */; };
+		2F3B99E72455A02F0007F0FB /* SmartDocRecognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B12455A02E0007F0FB /* SmartDocRecognize.swift */; };
+		2F3B99E82455A02F0007F0FB /* SmartDocToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B22455A02E0007F0FB /* SmartDocToText.swift */; };
+		2F3B99E92455A02F0007F0FB /* SmartCardRecognizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B32455A02E0007F0FB /* SmartCardRecognizerVC.swift */; };
+		2F3B99EA2455A02F0007F0FB /* MyMRZResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B42455A02E0007F0FB /* MyMRZResult.swift */; };
+		2F3B99EB2455A02F0007F0FB /* SmartDocCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B52455A02E0007F0FB /* SmartDocCameraVC.swift */; };
+		2F3B99EC2455A02F0007F0FB /* SmartImageDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B62455A02E0007F0FB /* SmartImageDetect.swift */; };
+		2F3B99ED2455A02F0007F0FB /* MyMRZParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B82455A02E0007F0FB /* MyMRZParser.swift */; };
+		2F3B99EE2455A02F0007F0FB /* MyMRZFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99B92455A02E0007F0FB /* MyMRZFieldFormatter.swift */; };
+		2F3B99EF2455A02F0007F0FB /* TD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99BB2455A02F0007F0FB /* TD3.swift */; };
+		2F3B99F02455A02F0007F0FB /* TD1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99BC2455A02F0007F0FB /* TD1.swift */; };
+		2F3B99F12455A02F0007F0FB /* TD2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99BD2455A02F0007F0FB /* TD2.swift */; };
+		2F3B99F22455A02F0007F0FB /* String-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99BE2455A02F0007F0FB /* String-Ext.swift */; };
+		2F3B99F32455A02F0007F0FB /* MRZField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99BF2455A02F0007F0FB /* MRZField.swift */; };
+		2F3B99F42455A02F0007F0FB /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C22455A02F0007F0FB /* flash.png */; };
+		2F3B99F52455A02F0007F0FB /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C32455A02F0007F0FB /* flash@2x.png */; };
+		2F3B99F62455A02F0007F0FB /* flash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C42455A02F0007F0FB /* flash@3x.png */; };
+		2F3B99F72455A02F0007F0FB /* camera_rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C62455A02F0007F0FB /* camera_rotate.png */; };
+		2F3B99F82455A02F0007F0FB /* camera_rotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C72455A02F0007F0FB /* camera_rotate@3x.png */; };
+		2F3B99F92455A02F0007F0FB /* camera_rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99C82455A02F0007F0FB /* camera_rotate@2x.png */; };
+		2F3B99FA2455A02F0007F0FB /* highB@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99CA2455A02F0007F0FB /* highB@3x.png */; };
+		2F3B99FB2455A02F0007F0FB /* highB@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99CB2455A02F0007F0FB /* highB@2x.png */; };
+		2F3B99FC2455A02F0007F0FB /* highB.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99CC2455A02F0007F0FB /* highB.png */; };
+		2F3B99FD2455A02F0007F0FB /* lowB@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99CE2455A02F0007F0FB /* lowB@2x.png */; };
+		2F3B99FE2455A02F0007F0FB /* lowB.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99CF2455A02F0007F0FB /* lowB.png */; };
+		2F3B99FF2455A02F0007F0FB /* lowB@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B99D02455A02F0007F0FB /* lowB@3x.png */; };
+		2F3B9A002455A02F0007F0FB /* SmartDocResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99D22455A02F0007F0FB /* SmartDocResult.swift */; };
+		2F3B9A012455A02F0007F0FB /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99D32455A02F0007F0FB /* Observation.swift */; };
+		2F3B9A022455A02F0007F0FB /* RectangularSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99D42455A02F0007F0FB /* RectangularSwap.swift */; };
+		2F3B9A032455A02F0007F0FB /* SDRAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99D92455A02F0007F0FB /* SDRAreaView.swift */; };
+		2F3B9A042455A02F0007F0FB /* SDRCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99DA2455A02F0007F0FB /* SDRCornerView.swift */; };
+		2F3B9A052455A02F0007F0FB /* SDRCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99DB2455A02F0007F0FB /* SDRCropView.swift */; };
+		2F3B9A062455A02F0007F0FB /* SDRQuadrangleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99DC2455A02F0007F0FB /* SDRQuadrangleHelper.swift */; };
+		2F3B9A072455A02F0007F0FB /* SDRCropError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99DD2455A02F0007F0FB /* SDRCropError.swift */; };
+		2F3B9A082455A02F0007F0FB /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99DF2455A02F0007F0FB /* HelperClass.swift */; };
+		2F3B9A092455A02F0007F0FB /* SmartDocIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99E02455A02F0007F0FB /* SmartDocIndicator.swift */; };
+		2F3B9A0A2455A02F0007F0FB /* AutoDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99E12455A02F0007F0FB /* AutoDetector.swift */; };
+		2F3B9A0B2455A02F0007F0FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99E22455A02F0007F0FB /* Extensions.swift */; };
+		2F3B9A0C2455A02F0007F0FB /* DetectedAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B99E32455A02F0007F0FB /* DetectedAreaView.swift */; };
+		2F52DCD6243F913D0071DC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52DCD5243F913D0071DC36 /* AppDelegate.swift */; };
+		2F52DCD8243F913D0071DC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52DCD7243F913D0071DC36 /* SceneDelegate.swift */; };
+		2F52DCDA243F913D0071DC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52DCD9243F913D0071DC36 /* ViewController.swift */; };
+		2F52DCDD243F913D0071DC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F52DCDB243F913D0071DC36 /* Main.storyboard */; };
+		2F52DCDF243F91420071DC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F52DCDE243F91420071DC36 /* Assets.xcassets */; };
+		2F52DCE2243F91420071DC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F52DCE0243F91420071DC36 /* LaunchScreen.storyboard */; };
+		2FEDEDED246A4526006C520A /* ExtractTaxCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDEDEC246A4526006C520A /* ExtractTaxCode.swift */; };
+		2FFE8F862477973800BA11A5 /* ProcessLicencePlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE8F852477973800BA11A5 /* ProcessLicencePlate.swift */; };
+		90C92948287DFE5D00332156 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B99E42455A02F0007F0FB /* TesseractOCR.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		90C92949287DFE5D00332156 /* TesseractOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B99E42455A02F0007F0FB /* TesseractOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90C929B1287F59AD00332156 /* PayCardsRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C929B0287F59AC00332156 /* PayCardsRecognizer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90C9294A287DFE5D00332156 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90C92949287DFE5D00332156 /* TesseractOCR.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F35E4A5246CFDBC00B251C7 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		2F3B992F245597D30007F0FB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		2F3B99B02455A02E0007F0FB /* SmartDocCropVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocCropVC.swift; sourceTree = "<group>"; };
+		2F3B99B12455A02E0007F0FB /* SmartDocRecognize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocRecognize.swift; sourceTree = "<group>"; };
+		2F3B99B22455A02E0007F0FB /* SmartDocToText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocToText.swift; sourceTree = "<group>"; };
+		2F3B99B32455A02E0007F0FB /* SmartCardRecognizerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartCardRecognizerVC.swift; sourceTree = "<group>"; };
+		2F3B99B42455A02E0007F0FB /* MyMRZResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMRZResult.swift; sourceTree = "<group>"; };
+		2F3B99B52455A02E0007F0FB /* SmartDocCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocCameraVC.swift; sourceTree = "<group>"; };
+		2F3B99B62455A02E0007F0FB /* SmartImageDetect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartImageDetect.swift; sourceTree = "<group>"; };
+		2F3B99B82455A02E0007F0FB /* MyMRZParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMRZParser.swift; sourceTree = "<group>"; };
+		2F3B99B92455A02E0007F0FB /* MyMRZFieldFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMRZFieldFormatter.swift; sourceTree = "<group>"; };
+		2F3B99BB2455A02F0007F0FB /* TD3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TD3.swift; sourceTree = "<group>"; };
+		2F3B99BC2455A02F0007F0FB /* TD1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TD1.swift; sourceTree = "<group>"; };
+		2F3B99BD2455A02F0007F0FB /* TD2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TD2.swift; sourceTree = "<group>"; };
+		2F3B99BE2455A02F0007F0FB /* String-Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Ext.swift"; sourceTree = "<group>"; };
+		2F3B99BF2455A02F0007F0FB /* MRZField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRZField.swift; sourceTree = "<group>"; };
+		2F3B99C22455A02F0007F0FB /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
+		2F3B99C32455A02F0007F0FB /* flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@2x.png"; sourceTree = "<group>"; };
+		2F3B99C42455A02F0007F0FB /* flash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@3x.png"; sourceTree = "<group>"; };
+		2F3B99C62455A02F0007F0FB /* camera_rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_rotate.png; sourceTree = "<group>"; };
+		2F3B99C72455A02F0007F0FB /* camera_rotate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_rotate@3x.png"; sourceTree = "<group>"; };
+		2F3B99C82455A02F0007F0FB /* camera_rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_rotate@2x.png"; sourceTree = "<group>"; };
+		2F3B99CA2455A02F0007F0FB /* highB@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "highB@3x.png"; sourceTree = "<group>"; };
+		2F3B99CB2455A02F0007F0FB /* highB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "highB@2x.png"; sourceTree = "<group>"; };
+		2F3B99CC2455A02F0007F0FB /* highB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highB.png; sourceTree = "<group>"; };
+		2F3B99CE2455A02F0007F0FB /* lowB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowB@2x.png"; sourceTree = "<group>"; };
+		2F3B99CF2455A02F0007F0FB /* lowB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowB.png; sourceTree = "<group>"; };
+		2F3B99D02455A02F0007F0FB /* lowB@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowB@3x.png"; sourceTree = "<group>"; };
+		2F3B99D22455A02F0007F0FB /* SmartDocResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocResult.swift; sourceTree = "<group>"; };
+		2F3B99D32455A02F0007F0FB /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		2F3B99D42455A02F0007F0FB /* RectangularSwap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularSwap.swift; sourceTree = "<group>"; };
+		2F3B99D92455A02F0007F0FB /* SDRAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRAreaView.swift; sourceTree = "<group>"; };
+		2F3B99DA2455A02F0007F0FB /* SDRCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRCornerView.swift; sourceTree = "<group>"; };
+		2F3B99DB2455A02F0007F0FB /* SDRCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRCropView.swift; sourceTree = "<group>"; };
+		2F3B99DC2455A02F0007F0FB /* SDRQuadrangleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRQuadrangleHelper.swift; sourceTree = "<group>"; };
+		2F3B99DD2455A02F0007F0FB /* SDRCropError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRCropError.swift; sourceTree = "<group>"; };
+		2F3B99DF2455A02F0007F0FB /* HelperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		2F3B99E02455A02F0007F0FB /* SmartDocIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDocIndicator.swift; sourceTree = "<group>"; };
+		2F3B99E12455A02F0007F0FB /* AutoDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDetector.swift; sourceTree = "<group>"; };
+		2F3B99E22455A02F0007F0FB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2F3B99E32455A02F0007F0FB /* DetectedAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectedAreaView.swift; sourceTree = "<group>"; };
+		2F3B99E42455A02F0007F0FB /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		2F52DCD2243F913D0071DC36 /* Document Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Document Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52DCD5243F913D0071DC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F52DCD7243F913D0071DC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F52DCD9243F913D0071DC36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F52DCDC243F913D0071DC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F52DCDE243F91420071DC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F52DCE1243F91420071DC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F52DCE3243F91420071DC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FEDEDEC246A4526006C520A /* ExtractTaxCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractTaxCode.swift; sourceTree = "<group>"; };
+		2FFE8F852477973800BA11A5 /* ProcessLicencePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessLicencePlate.swift; sourceTree = "<group>"; };
+		90C929B0287F59AC00332156 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayCardsRecognizer.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F52DCCF243F913D0071DC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C92948287DFE5D00332156 /* TesseractOCR.framework in Frameworks */,
+				90C929B1287F59AD00332156 /* PayCardsRecognizer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3B99AE2455A02E0007F0FB /* SmartDocScan */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE8F842477970F00BA11A5 /* LicencePlateDetection */,
+				2F3B99AF2455A02E0007F0FB /* Controllers+Main */,
+				2FEDEDEB246A4508006C520A /* CodiceFiscale */,
+				2F3B99B72455A02E0007F0FB /* MyMRZPerse */,
+				2F3B99C02455A02F0007F0FB /* Asset */,
+				2F3B99D12455A02F0007F0FB /* Models */,
+				2F3B99D52455A02F0007F0FB /* SwiftyTesseract */,
+				2F3B99D82455A02F0007F0FB /* CropView */,
+				2F3B99DE2455A02F0007F0FB /* Helpers */,
+			);
+			path = SmartDocScan;
+			sourceTree = "<group>";
+		};
+		2F3B99AF2455A02E0007F0FB /* Controllers+Main */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99B12455A02E0007F0FB /* SmartDocRecognize.swift */,
+				2F3B99B22455A02E0007F0FB /* SmartDocToText.swift */,
+				2F3B99B32455A02E0007F0FB /* SmartCardRecognizerVC.swift */,
+				2F3B99B42455A02E0007F0FB /* MyMRZResult.swift */,
+				2F3B99B52455A02E0007F0FB /* SmartDocCameraVC.swift */,
+				2F3B99B02455A02E0007F0FB /* SmartDocCropVC.swift */,
+				2F3B99B62455A02E0007F0FB /* SmartImageDetect.swift */,
+			);
+			path = "Controllers+Main";
+			sourceTree = "<group>";
+		};
+		2F3B99B72455A02E0007F0FB /* MyMRZPerse */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99B82455A02E0007F0FB /* MyMRZParser.swift */,
+				2F3B99B92455A02E0007F0FB /* MyMRZFieldFormatter.swift */,
+				2F3B99BA2455A02F0007F0FB /* TestDocParse */,
+				2F3B99BE2455A02F0007F0FB /* String-Ext.swift */,
+				2F3B99BF2455A02F0007F0FB /* MRZField.swift */,
+			);
+			path = MyMRZPerse;
+			sourceTree = "<group>";
+		};
+		2F3B99BA2455A02F0007F0FB /* TestDocParse */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99BB2455A02F0007F0FB /* TD3.swift */,
+				2F3B99BC2455A02F0007F0FB /* TD1.swift */,
+				2F3B99BD2455A02F0007F0FB /* TD2.swift */,
+			);
+			path = TestDocParse;
+			sourceTree = "<group>";
+		};
+		2F3B99C02455A02F0007F0FB /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99C12455A02F0007F0FB /* flash.imageset */,
+				2F3B99C52455A02F0007F0FB /* camera_rotate.imageset */,
+				2F3B99C92455A02F0007F0FB /* highB.imageset */,
+				2F3B99CD2455A02F0007F0FB /* lowB.imageset */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		2F3B99C12455A02F0007F0FB /* flash.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99C22455A02F0007F0FB /* flash.png */,
+				2F3B99C32455A02F0007F0FB /* flash@2x.png */,
+				2F3B99C42455A02F0007F0FB /* flash@3x.png */,
+			);
+			path = flash.imageset;
+			sourceTree = "<group>";
+		};
+		2F3B99C52455A02F0007F0FB /* camera_rotate.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99C62455A02F0007F0FB /* camera_rotate.png */,
+				2F3B99C72455A02F0007F0FB /* camera_rotate@3x.png */,
+				2F3B99C82455A02F0007F0FB /* camera_rotate@2x.png */,
+			);
+			path = camera_rotate.imageset;
+			sourceTree = "<group>";
+		};
+		2F3B99C92455A02F0007F0FB /* highB.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99CA2455A02F0007F0FB /* highB@3x.png */,
+				2F3B99CB2455A02F0007F0FB /* highB@2x.png */,
+				2F3B99CC2455A02F0007F0FB /* highB.png */,
+			);
+			path = highB.imageset;
+			sourceTree = "<group>";
+		};
+		2F3B99CD2455A02F0007F0FB /* lowB.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99CE2455A02F0007F0FB /* lowB@2x.png */,
+				2F3B99CF2455A02F0007F0FB /* lowB.png */,
+				2F3B99D02455A02F0007F0FB /* lowB@3x.png */,
+			);
+			path = lowB.imageset;
+			sourceTree = "<group>";
+		};
+		2F3B99D12455A02F0007F0FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99D22455A02F0007F0FB /* SmartDocResult.swift */,
+				2F3B99D32455A02F0007F0FB /* Observation.swift */,
+				2F3B99D42455A02F0007F0FB /* RectangularSwap.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F3B99D52455A02F0007F0FB /* SwiftyTesseract */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99D62455A02F0007F0FB /* SwiftyTesseractTests */,
+			);
+			path = SwiftyTesseract;
+			sourceTree = "<group>";
+		};
+		2F3B99D62455A02F0007F0FB /* SwiftyTesseractTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99D72455A02F0007F0FB /* tessdata */,
+			);
+			path = SwiftyTesseractTests;
+			sourceTree = "<group>";
+		};
+		2F3B99D72455A02F0007F0FB /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tessdata;
+			sourceTree = "<group>";
+		};
+		2F3B99D82455A02F0007F0FB /* CropView */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B99D92455A02F0007F0FB /* SDRAreaView.swift */,
+				2F3B99DA2455A02F0007F0FB /* SDRCornerView.swift */,
+				2F3B99DB2455A02F0007F0FB /* SDRCropView.swift */,
+				2F3B99DC2455A02F0007F0FB /* SDRQuadrangleHelper.swift */,
+				2F3B99DD2455A02F0007F0FB /* SDRCropError.swift */,
+			);
+			path = CropView;
+			sourceTree = "<group>";
+		};
+		2F3B99DE2455A02F0007F0FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F35E4A5246CFDBC00B251C7 /* ImageUtils.swift */,
+				2F3B99DF2455A02F0007F0FB /* HelperClass.swift */,
+				2F3B99E02455A02F0007F0FB /* SmartDocIndicator.swift */,
+				2F3B99E12455A02F0007F0FB /* AutoDetector.swift */,
+				2F3B99E22455A02F0007F0FB /* Extensions.swift */,
+				2F3B99E32455A02F0007F0FB /* DetectedAreaView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F52DCC9243F913D0071DC36 = {
+			isa = PBXGroup;
+			children = (
+				2F52DCD4243F913D0071DC36 /* Document Scanner */,
+				2F52DCD3243F913D0071DC36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F52DCD3243F913D0071DC36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F52DCD2243F913D0071DC36 /* Document Scanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F52DCD4243F913D0071DC36 /* Document Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				90C929B0287F59AC00332156 /* PayCardsRecognizer.framework */,
+				2F3B99E42455A02F0007F0FB /* TesseractOCR.framework */,
+				2F3B992F245597D30007F0FB /* tessdata */,
+				2F3B99AE2455A02E0007F0FB /* SmartDocScan */,
+				2F52DCD5243F913D0071DC36 /* AppDelegate.swift */,
+				2F52DCD7243F913D0071DC36 /* SceneDelegate.swift */,
+				2F52DCD9243F913D0071DC36 /* ViewController.swift */,
+				2F52DCDB243F913D0071DC36 /* Main.storyboard */,
+				2F52DCDE243F91420071DC36 /* Assets.xcassets */,
+				2F52DCE0243F91420071DC36 /* LaunchScreen.storyboard */,
+				2F52DCE3243F91420071DC36 /* Info.plist */,
+			);
+			path = "Document Scanner";
+			sourceTree = "<group>";
+		};
+		2FEDEDEB246A4508006C520A /* CodiceFiscale */ = {
+			isa = PBXGroup;
+			children = (
+				2FEDEDEC246A4526006C520A /* ExtractTaxCode.swift */,
+			);
+			path = CodiceFiscale;
+			sourceTree = "<group>";
+		};
+		2FFE8F842477970F00BA11A5 /* LicencePlateDetection */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE8F852477973800BA11A5 /* ProcessLicencePlate.swift */,
+			);
+			path = LicencePlateDetection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F52DCD1243F913D0071DC36 /* Document Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F52DCE6243F91420071DC36 /* Build configuration list for PBXNativeTarget "Document Scanner" */;
+			buildPhases = (
+				2F52DCCE243F913D0071DC36 /* Sources */,
+				2F52DCCF243F913D0071DC36 /* Frameworks */,
+				2F52DCD0243F913D0071DC36 /* Resources */,
+				2FE41434247295A900616D10 /* ShellScript */,
+				90C9294A287DFE5D00332156 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Document Scanner";
+			productName = "Document Scanner";
+			productReference = 2F52DCD2243F913D0071DC36 /* Document Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F52DCCA243F913D0071DC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Convergent Infoware";
+				TargetAttributes = {
+					2F52DCD1243F913D0071DC36 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2F52DCCD243F913D0071DC36 /* Build configuration list for PBXProject "Document Scanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F52DCC9243F913D0071DC36;
+			productRefGroup = 2F52DCD3243F913D0071DC36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F52DCD1243F913D0071DC36 /* Document Scanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F52DCD0243F913D0071DC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F52DCE2243F91420071DC36 /* LaunchScreen.storyboard in Resources */,
+				2F3B99F52455A02F0007F0FB /* flash@2x.png in Resources */,
+				2F3B9930245597D30007F0FB /* tessdata in Resources */,
+				2F3B99F72455A02F0007F0FB /* camera_rotate.png in Resources */,
+				2F3B99F62455A02F0007F0FB /* flash@3x.png in Resources */,
+				2F52DCDF243F91420071DC36 /* Assets.xcassets in Resources */,
+				2F3B99FD2455A02F0007F0FB /* lowB@2x.png in Resources */,
+				2F3B99F82455A02F0007F0FB /* camera_rotate@3x.png in Resources */,
+				2F3B99FA2455A02F0007F0FB /* highB@3x.png in Resources */,
+				2F3B99F42455A02F0007F0FB /* flash.png in Resources */,
+				2F3B99F92455A02F0007F0FB /* camera_rotate@2x.png in Resources */,
+				2F3B99FE2455A02F0007F0FB /* lowB.png in Resources */,
+				2F3B99FC2455A02F0007F0FB /* highB.png in Resources */,
+				2F3B99FF2455A02F0007F0FB /* lowB@3x.png in Resources */,
+				2F52DCDD243F913D0071DC36 /* Main.storyboard in Resources */,
+				2F3B99FB2455A02F0007F0FB /* highB@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FE41434247295A900616D10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F52DCCE243F913D0071DC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3B99F22455A02F0007F0FB /* String-Ext.swift in Sources */,
+				2F3B9A062455A02F0007F0FB /* SDRQuadrangleHelper.swift in Sources */,
+				2F3B9A072455A02F0007F0FB /* SDRCropError.swift in Sources */,
+				2F3B9A0C2455A02F0007F0FB /* DetectedAreaView.swift in Sources */,
+				2F3B99E82455A02F0007F0FB /* SmartDocToText.swift in Sources */,
+				2F3B99E72455A02F0007F0FB /* SmartDocRecognize.swift in Sources */,
+				2F3B99EB2455A02F0007F0FB /* SmartDocCameraVC.swift in Sources */,
+				2F3B9A092455A02F0007F0FB /* SmartDocIndicator.swift in Sources */,
+				2F3B9A0B2455A02F0007F0FB /* Extensions.swift in Sources */,
+				2F3B99EA2455A02F0007F0FB /* MyMRZResult.swift in Sources */,
+				2F3B99E92455A02F0007F0FB /* SmartCardRecognizerVC.swift in Sources */,
+				2FEDEDED246A4526006C520A /* ExtractTaxCode.swift in Sources */,
+				2F52DCDA243F913D0071DC36 /* ViewController.swift in Sources */,
+				2F3B9A002455A02F0007F0FB /* SmartDocResult.swift in Sources */,
+				2FFE8F862477973800BA11A5 /* ProcessLicencePlate.swift in Sources */,
+				2F3B9A052455A02F0007F0FB /* SDRCropView.swift in Sources */,
+				2F3B99E62455A02F0007F0FB /* SmartDocCropVC.swift in Sources */,
+				2F52DCD6243F913D0071DC36 /* AppDelegate.swift in Sources */,
+				2F3B99EC2455A02F0007F0FB /* SmartImageDetect.swift in Sources */,
+				2F3B9A022455A02F0007F0FB /* RectangularSwap.swift in Sources */,
+				2F3B99ED2455A02F0007F0FB /* MyMRZParser.swift in Sources */,
+				2F3B9A082455A02F0007F0FB /* HelperClass.swift in Sources */,
+				2F52DCD8243F913D0071DC36 /* SceneDelegate.swift in Sources */,
+				2F3B99F02455A02F0007F0FB /* TD1.swift in Sources */,
+				2F3B99EF2455A02F0007F0FB /* TD3.swift in Sources */,
+				2F3B9A032455A02F0007F0FB /* SDRAreaView.swift in Sources */,
+				2F3B9A012455A02F0007F0FB /* Observation.swift in Sources */,
+				2F3B99F12455A02F0007F0FB /* TD2.swift in Sources */,
+				2F3B9A0A2455A02F0007F0FB /* AutoDetector.swift in Sources */,
+				2F3B9A042455A02F0007F0FB /* SDRCornerView.swift in Sources */,
+				2F3B99EE2455A02F0007F0FB /* MyMRZFieldFormatter.swift in Sources */,
+				2F3B99F32455A02F0007F0FB /* MRZField.swift in Sources */,
+				2F35E4A6246CFDBC00B251C7 /* ImageUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F52DCDB243F913D0071DC36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F52DCDC243F913D0071DC36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F52DCE0243F91420071DC36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F52DCE1243F91420071DC36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F52DCE4243F91420071DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F52DCE5243F91420071DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F52DCE7243F91420071DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 934QR687S3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"\"$(SRCROOT)/Document Scanner/DocScan/tessdata\"",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+				);
+				INFOPLIST_FILE = "Document Scanner/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"\"$(SRCROOT)/Document Scanner/SwiftyTesseract.framework\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Document Scanner/DocScan/tessdata\"",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijitBabu.Document-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F52DCE8243F91420071DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 934QR687S3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"\"$(SRCROOT)/Document Scanner/DocScan/tessdata\"",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/DocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+					"$(PROJECT_DIR)/Document\\ Scanner",
+				);
+				INFOPLIST_FILE = "Document Scanner/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"\"$(SRCROOT)/Document Scanner/SwiftyTesseract.framework\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Document Scanner/DocScan/tessdata\"",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocRecognize/TesseractOCRiOS/TesseractOCR/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+					"$(PROJECT_DIR)/Document\\ Scanner/SmartDocScan/SwiftyTesseract/SwiftyTesseract/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijitBabu.Document-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F52DCCD243F913D0071DC36 /* Build configuration list for PBXProject "Document Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52DCE4243F91420071DC36 /* Debug */,
+				2F52DCE5243F91420071DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F52DCE6243F91420071DC36 /* Build configuration list for PBXNativeTarget "Document Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52DCE7243F91420071DC36 /* Debug */,
+				2F52DCE8243F91420071DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F52DCCA243F913D0071DC36 /* Project object */;
+}

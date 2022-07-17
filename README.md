@@ -3,11 +3,11 @@ An document and id scanner app where you can scan passport credit card tax code 
 
 
 <p align="center">
+<img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_5.PNG' width="250" height="500"/>
 <img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_1.PNG' width="250" height="500"/>
 <img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_2.PNG' width="250" height="500"/>
 <img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_3.PNG' width="250" height="500"/>
 <img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_4.PNG' width="250" height="500"/>
-<img src='https://github.com/avijitmobi/DocumentAndIDScanner-Swift/blob/main/files/IMG_5.PNG' width="250" height="500"/>
 <footer>
 <p align="center" >Screenshots and Video</p>
 </footer>

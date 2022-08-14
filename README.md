@@ -18,7 +18,7 @@ An document and id scanner app where you can scan passport credit card tax code 
 ## Installation
 
 ```ruby
- download the project from here can modify as you want. I have used google's Tesseract frame work to achive this. You can chnage those model and use at your own. This was for a Italian client. So you can scan Tax code card and driving licenece of Itally too.
+ download the project from here can modify as you want. I have used google's Tesseract frame work to achieve this. You can change those model and use at your own. This was for an Italian client. So you can scan Tax code card and driving licence of Italy too.
 ```
 
 ## Author
